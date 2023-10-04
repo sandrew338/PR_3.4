@@ -19,7 +19,7 @@ int main()
 	cout << "y = "; cin >> y;
 
 	// розгалуження в повній формі
-	if ((y <= sqrt(R*R - pow(x + R, 2)) && y >= 0 && y <= R && x >= -R && x <= 0) || (y >= -sqrt(R*R - pow(x - R, 2)) && y >= -R && y <= 0 && x >= 0 && x <= R))
+	if ((y <= pow(R*R - pow(x + R, 2),  2) && y >= 0 && y <= R && x >= -R && x <= 0) || (y <= pow(R*R - pow(x - R, 2), 2) && y >= -R && y <= 0 && x >= 0 && x <= R))
 		cout << "yes" << endl;
 	else
 		cout << "no" << endl;
